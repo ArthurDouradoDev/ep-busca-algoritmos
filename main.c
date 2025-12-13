@@ -5,11 +5,10 @@
 #include "estruturas.h"
 
 // Forward declarations for functions to be implemented by colleagues
-void insere_lista(NoIndice **inicio, char *palavra, int linha, int *comparacoes);
-void insere_arvore(NoIndice **raiz, char *palavra, int linha, int *comparacoes);
-NoIndice* busca_lista(NoIndice *inicio, char *palavra, int *comparacoes);
-NoIndice* busca_arvore(NoIndice *raiz, char *palavra, int *comparacoes);
-int altura_arvore(NoIndice *raiz); // Giovanni vai ter essa funccao, precisa pro relatorio
+void insere_lista(NoIndice **inicio, char *palavra, int linha);
+void insere_arvore(NoIndice **raiz, char *palavra, int linha);
+NoIndice* busca_lista(NoIndice *inicio, char *palavra);
+NoIndice* busca_arvore(NoIndice *raiz, char *palavra);
 
 // Global variables for text persistence
 char **todas_as_linhas = NULL;
@@ -42,8 +41,6 @@ int main(int argc, char *argv[]) {
     NoIndice *inicio = NULL; // Lista
     NoIndice *raiz = NULL;   // Arvore
 
-    int comparacoes_construcao = 0;
-    
     // 2. Carrega o texto na memória (Task 2)
     FILE *f = fopen(argv[1], "r");
     if (!f) {
@@ -59,6 +56,7 @@ int main(int argc, char *argv[]) {
 
     char buffer[10000]; // Buffer temporario para leitura
     
+    printf(">>>>> Carregando arquivo...\n");
 
     while (fgets(buffer, sizeof(buffer), f)) {
         // Remove \n
@@ -83,38 +81,31 @@ int main(int argc, char *argv[]) {
         char *token;
         
         // Delimiters: space, comma, dot, dash, exclamation, question
-        token = strtok(copia, " ,.-!?\n\r:;\"'()[]{}/");
+        token = strtok(copia, " ,.-!?\n\r");
         while (token != NULL) {
             if (strlen(token) > 0) {
                 limpa_palavra(token);
                 if (strlen(token) > 0) {
                     if (modo_arvore) {
-                        insere_arvore(&raiz, token, total_linhas + 1, &comparacoes_construcao);
+                        insere_arvore(&raiz, token, total_linhas + 1);
                     } else {
-                        insere_lista(&inicio, token, total_linhas + 1, &comparacoes_construcao);
+                        insere_lista(&inicio, token, total_linhas + 1);
                     }
                 }
             }
-            token = strtok(NULL, " ,.-!?\n\r:;\"'()[]{}/");
+            token = strtok(NULL, " ,.-!?\n\r");
         }
         free(copia);
         total_linhas++;
     }
     fclose(f);
-    printf("Arquivo: '%s'\n", argv[1]);
-    printf("Tipo de indice: '%s'\n", argv[2]);
-    printf("Numero de linhas no arquivo: %d\n", total_linhas);
-    printf("Total de palavras unicas indexadas: 0\n"); 
-
-    if (modo_arvore) {
-        printf("Altura da arvore: 0\n"); 
-    }
-    printf("Numero de comparacoes realizadas para a construcao do indice: %d\n", comparacoes_construcao);
+    printf(">>>>> Arquivo carregado! Total de linhas: %d\n", total_linhas);
 
     // Task 5: Interface de Usuário (CLI) e Busca
     char comando[100];
     char termo[100];
     
+    printf("Tipo de indice: '%s'.\n", argv[2]);
     
     while (1) {
         printf("> ");
@@ -126,17 +117,16 @@ int main(int argc, char *argv[]) {
             if (scanf("%99s", termo) != 1) break;
             
             limpa_palavra(termo);
-
-            int comparacoes_busca = 0;
+            
             NoIndice *resultado = NULL;
             if (modo_arvore) {
-                resultado = busca_arvore(raiz, termo, &comparacoes_busca);
+                resultado = busca_arvore(raiz, termo);
             } else {
-                resultado = busca_lista(inicio, termo, &comparacoes_busca);
+                resultado = busca_lista(inicio, termo);
             }
             
             if (resultado) {
-                printf("Existem %d ocorrências da palavra '%s' na(s) seguinte(s) linha(s):\n", resultado->ocorrencias, termo);
+                printf("Existem %d ocorrências da palavra '%s' nas seguintes linhas:\n", resultado->ocorrencias, termo);
                 NoLinha *atual = resultado->lista_linhas;
                 while(atual != NULL) {
                     // Imprime a linha original usando o vetor persistente
@@ -149,7 +139,6 @@ int main(int argc, char *argv[]) {
             } else {
                 printf("Palavra '%s' nao encontrada.\n", termo);
             }
-            printf("Numero de comparacoes: %d\n", comparacoes_busca);
         } else {
             printf("Opcao invalida!\n");
         }
