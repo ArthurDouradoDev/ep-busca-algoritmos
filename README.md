@@ -94,7 +94,7 @@ Os experimentos realizados com textos de diferentes tamanhos (`basic`, `medium`,
     *   `medium.txt`: Artigo médio em português.
     *   `long.txt`: O texto completo do livro *Frankenstein* (em inglês) do Project Gutenberg.
 *   **`run_experiments.bat`**: Script de automação (Windows Batch) criado para executar a bateria de testes e gerar o relatório `results.txt`.
-*   **`input_commands.txt`**: Arquivo contendo a sequência automatizada de comandos de busca (ex: busca por "que", "melancolia", "xilofone") usada pelo script.
+*   **`input_commands.txt`**: Arquivo contendo a sequência automatizada de comandos de busca (ex: busca por "Frankenstein", "algorithm", "Google") usada pelo script.
 
 ---
 *Projeto desenvolvido para a disciplina de Algoritmos e Estruturas de Dados 1 da USP - 2o Semestre de 2025.*
