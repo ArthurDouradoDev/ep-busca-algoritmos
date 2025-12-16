@@ -9,7 +9,7 @@ char **todas_as_linhas = NULL;
 int total_linhas = 0;
 int capacidade_maxima = 1000;
 
-// Limpa a palavra
+// Task 3: Sanitizer
 void limpa_palavra(char *palavra) {
     char *src = palavra;
     char *dst = palavra;
@@ -24,10 +24,14 @@ void limpa_palavra(char *palavra) {
     *dst = '\0';
 }
 
-int main(int argc, char *argv[]) {
-    // Configura o console para UTF-8
-    system("chcp 65001 > nul");
+#ifdef _WIN32
+#include <windows.h>
+#endif
 
+int main(int argc, char *argv[]) {
+#ifdef _WIN32
+    SetConsoleOutputCP(65001);
+#endif
     // 1. Verifica argumentos
     if (argc < 3) { 
         printf("Uso: %s <arquivo> <tipo_indice>\n", argv[0]); 
