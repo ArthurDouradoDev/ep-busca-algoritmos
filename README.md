@@ -7,14 +7,14 @@ Este projeto implementa um sistema robusto para indexação e busca de palavras 
 O projeto está **completo** e funcional, contando com:
 
 1.  **Carregamento Otimizado**: O arquivo de texto é carregado completamente para a memória no início, permitindo acesso instantâneo às linhas originais durante a busca sem I/O de disco adicional.
-2.  **Sanitização Inteligente**: As palavras são tratadas antes da indexação:
+2.  **Tratamento dos Textos**: As palavras são tratadas antes da indexação:
     *   Remoção de pontuações (`.,!?-:;` etc).
     *   Conversão para minúsculas (case-insensitive).
     *   Preservação de caracteres acentuados.
 3.  **Métricas de Performance**:
     *   **Contador de Comparações**: Monitora a eficiência da construção do índice e da busca.
     *   **Estatísticas da Estrutura**: Exibe o total de palavras únicas cadastradas e, no caso da árvore, a sua altura máxima.
-4.  **CLI Interativa**: Interface de linha de comando amigável com suporte a UTF-8 (acentuação correta no Windows).
+4.  **Interface de Usuário**: Interface de linha de comando amigável com suporte a UTF-8 (acentuação correta no Windows).
 
 ## 🛠️ Como Compilar
 
@@ -74,8 +74,8 @@ Os experimentos realizados com textos de diferentes tamanhos (`basic`, `medium`,
 
 | Estrutura | Custo de Construção (Comparações) | Busca Palavra Inexistente (*) |
 | :--- | :--- | :--- |
-| **Lista Ligada** ($O(N)$) | **326.258.238** (326 Milhões) | ~7.414 comparações |
-| **Árvore BST** ($O(\log N)$)| **885.075** (0.8 Milhões) | ~11-15 comparações |
+| **Lista Ligada** (O(N)) | **326.258.238** (326 Milhões) | ~7.414 comparações |
+| **Árvore BST** (O(log N))| **885.075** (0.8 Milhões) | ~11-15 comparações |
 
 **(*)** A busca de palavra inexistente força o **Pior Caso**, percorrendo toda a estrutura (ou até a folha). A Árvore foi massivamente superior, transformando uma busca linear de 7 mil passos em apenas 15 passos.
 
@@ -87,4 +87,4 @@ Os experimentos realizados com textos de diferentes tamanhos (`basic`, `medium`,
 *   **`arvore.c`**: Implementação das funções de manipulação da Árvore Binária (`insere`, `busca`, `altura`, `conta`).
 
 ---
-*Projeto desenvolvido para a disciplina de Algoritmos e Estruturas de Dados 1.*
+*Projeto desenvolvido para a disciplina de Algoritmos e Estruturas de Dados 1 da USP - 2o Semestre de 2025.*
