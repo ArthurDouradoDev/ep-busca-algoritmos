@@ -1,69 +1,90 @@
-# EP - Busca em Arquivos de Texto (AED 1)
+# EP - Indexador e Buscador de Texto (AED 1)
 
-Este projeto implementa um sistema de indexação e busca de palavras em arquivos de texto, utilizando Listas Ligadas e Árvores Binárias de Busca (ABB).
+Este projeto implementa um sistema robusto para indexação e busca de palavras em arquivos de texto. O objetivo principal é comparar a performance entre duas estruturas de dados clássicas: **Listas Ligadas** e **Árvores Binárias de Busca (ABB)**.
 
-## Estado Atual do Projeto
+## 🚀 Funcionalidades Implementadas
 
-O projeto já possui as seguintes funcionalidades implementadas (`main.c` e estrutural):
+O projeto está **completo** e funcional, contando com:
 
-1.  **Carregamento e Persistência**: O arquivo de texto é lido inteiramente para a memória (`todas_as_linhas`), permitindo acesso rápido ao conteúdo original das linhas sem precisar reler o arquivo do disco. As linhas são limpas de caracteres de quebra de linha.
-2.  **Sanitização de Texto**: Implementada a função `limpa_palavra`, que:
-    *   Remove pontuações (.,!?- etc).
-    *   Converte tudo para minúsculas.
-    *   Mantém dígitos.
-    *   Exemplo: "Casa," vira "casa".
-3.  **Tokenização**: O texto é quebrado em palavras (tokens) que alimentam o índice.
-4.  **Interface de Linha de Comando (CLI)**: Loop interativo que aceita os comandos:
-    *   `busca <termo>`: Procura uma palavra no índice e retorna as linhas onde ela aparece.
-    *   `fim`: Encerra o programa.
-5.  **Estrutura de Dados (`estruturas.h`)**: Definições de `NoLinha` e `NoIndice` unificadas para uso em Listas e Árvores.
+1.  **Carregamento Otimizado**: O arquivo de texto é carregado completamente para a memória no início, permitindo acesso instantâneo às linhas originais durante a busca sem I/O de disco adicional.
+2.  **Sanitização Inteligente**: As palavras são tratadas antes da indexação:
+    *   Remoção de pontuações (`.,!?-:;` etc).
+    *   Conversão para minúsculas (case-insensitive).
+    *   Preservação de caracteres acentuados.
+3.  **Métricas de Performance**:
+    *   **Contador de Comparações**: Monitora a eficiência da construção do índice e da busca.
+    *   **Estatísticas da Estrutura**: Exibe o total de palavras únicas cadastradas e, no caso da árvore, a sua altura máxima.
+4.  **CLI Interativa**: Interface de linha de comando amigável com suporte a UTF-8 (acentuação correta no Windows).
 
-### O que Falta Fazer (Próximos Passos)
+## 🛠️ Como Compilar
 
-Os arquivos complementares (`stubs.c` ou novos arquivos como `lista.c` e `arvore.c`) precisam ter suas funções implementadas. Atualmente, elas são apenas "stubs" (funções vazias) em `stubs.c`.
-
-Colaboradores devem implementar:
-*   `insere_lista` / `busca_lista`
-*   `insere_arvore` / `busca_arvore`
-
-## Como Compilar
-
-Para compilar o projeto completo (atualmente usando os stubs):
+O projeto é dividido em módulos. Para compilar, utilize o GCC:
 
 ```bash
-gcc main.c stubs.c -o ep.exe
+gcc main.c lista.c arvore.c -o ep.exe
 ```
 
-Para verificar o funcionamento da função de limpeza de texto separadamente:
+Isso gerará o executável `ep.exe`.
 
+## 💻 Como Executar
+
+O programa deve ser executado via terminal, recebendo dois argumentos obrigatórios:
+
+1.  **Nome do arquivo**: O caminho para o arquivo de texto a ser lido (ex: `basic.txt`, `long.txt`).
+2.  **Tipo de Índice**: A estrutura de dados a ser utilizada (`lista` ou `arvore`).
+
+### Exemplos:
+
+**Modo Lista Ligada:**
 ```bash
-gcc verificar_limpeza.c -o verificar.exe
-./verificar
+./ep.exe long.txt lista
 ```
 
-## Como Executar
-
-O programa espera dois argumentos: o nome do arquivo de texto e o tipo de índice (`lista` ou `arvore`).
-
-Exemplo:
+**Modo Árvore Binária:**
 ```bash
-./ep texto.txt lista
-```
-ou
-```bash
-./ep texto.txt arvore
+./ep.exe long.txt arvore
 ```
 
-### Interação
+---
 
-Após iniciar, o programa carregará o arquivo e ficará aguardando comandos:
+## 🔍 Comandos da Interface
 
+Após o carregamento, o programa exibirá estatísticas iniciais e aguardará comandos (`>`).
+
+| Comando | Descrição | Exemplo |
+| :--- | :--- | :--- |
+| `busca <palavra>` | Procura a palavra no índice e lista as linhas onde ela ocorre. Exibe também o nº de comparações feitas. | `busca frankenstein` |
+| `fim` | Encerra a execução do programa. | `fim` |
+
+**Exemplo de Saída:**
 ```text
-> busca casa
-Existem 3 ocorrências da palavra 'casa' nas seguintes linhas:
-00010: Onde fica a casa?
-00015: A Casa é bonita.
-00020: Eu vou para casa.
-
-> fim
+> busca algorithm
+Existem 4 ocorrências da palavra 'algorithm' na(s) seguinte(s) linha(s):
+00001: Informally, an algorithm is any well-defined computational procedure that takes
+00003: as output. An algorithm is thus a sequence of computational steps that transform
+...
+Numero de comparacoes: 3
 ```
+
+## 📊 Comparação de Performance (Resultados Obtidos)
+
+Os experimentos realizados com textos de diferentes tamanhos (`basic`, `medium`, `long`) demonstraram claramente a diferença de complexidade teórica entre as estruturas.
+
+**Destaque (Arquivo Grande - ~7.500 palavras únicas):**
+
+| Estrutura | Custo de Construção (Comparações) | Busca Palavra Inexistente (*) |
+| :--- | :--- | :--- |
+| **Lista Ligada** ($O(N)$) | **326.258.238** (326 Milhões) | ~7.414 comparações |
+| **Árvore BST** ($O(\log N)$)| **885.075** (0.8 Milhões) | ~11-15 comparações |
+
+**(*)** A busca de palavra inexistente força o **Pior Caso**, percorrendo toda a estrutura (ou até a folha). A Árvore foi massivamente superior, transformando uma busca linear de 7 mil passos em apenas 15 passos.
+
+## 📂 Estrutura do Código
+
+*   **`main.c`**: Ponto de entrada. Gerencia o carregamento do arquivo, loop de comandos e exibição de resultados.
+*   **`estruturas.h`**: Cabeçalho unificado definindo `NoIndice` e protótipos das funções.
+*   **`lista.c`**: Implementação das funções de manipulação da Lista Ligada (`insere`, `busca`, `conta`).
+*   **`arvore.c`**: Implementação das funções de manipulação da Árvore Binária (`insere`, `busca`, `altura`, `conta`).
+
+---
+*Projeto desenvolvido para a disciplina de Algoritmos e Estruturas de Dados 1.*
