@@ -1,0 +1,8 @@
+busca algorithm
+busca value
+busca Mary
+busca boat
+busca frankenstein
+busca IA
+busca Google
+fim

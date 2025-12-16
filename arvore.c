@@ -60,7 +60,6 @@ NoIndice* busca_arvore(NoIndice *raiz, char *palavra, int *comparacoes) {
 
 
 int altura_arvore(NoIndice *raiz) {
-    t altura_arvore(NoIndice *raiz) {
     if (raiz == NULL) {
         return -1; // Retorna -1 pra folha ter altura 0
     }
@@ -74,6 +73,8 @@ int altura_arvore(NoIndice *raiz) {
     else {
         return 1 + h_dir;
     }
- }
-    
+}
+int conta_nos_arvore(NoIndice *raiz) {
+    if (raiz == NULL) return 0;
+    return 1 + conta_nos_arvore(raiz->esq) + conta_nos_arvore(raiz->dir);
 }

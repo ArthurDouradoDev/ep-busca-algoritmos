@@ -16,10 +16,22 @@ typedef struct NoIndice {
     int ocorrencias;
     NoLinha *lista_linhas; // Cabeça da lista de linhas
 
-    // Ponteiros para as estruturas de dados
+
+// Ponteiros para as estruturas de dados
     struct NoIndice *prox; // Usado se for Lista Ligada
     struct NoIndice *esq;  // Usado se for Árvore
     struct NoIndice *dir;  // Usado se for Árvore
 } NoIndice;
+
+// Funções de Lista
+void insere_lista(NoIndice **inicio, char *palavra, int linha, int *comparacoes);
+NoIndice* busca_lista(NoIndice *inicio, char *palavra, int *comparacoes);
+int conta_nos_lista(NoIndice *inicio);
+
+// Funções de Árvore
+void insere_arvore(NoIndice **raiz, char *palavra, int linha, int *comparacoes);
+NoIndice* busca_arvore(NoIndice *raiz, char *palavra, int *comparacoes);
+int altura_arvore(NoIndice *raiz);
+int conta_nos_arvore(NoIndice *raiz);
 
 #endif

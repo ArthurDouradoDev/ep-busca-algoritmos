@@ -4,19 +4,12 @@
 #include <ctype.h>
 #include "estruturas.h"
 
-// Forward declarations for functions to be implemented by colleagues
-void insere_lista(NoIndice **inicio, char *palavra, int linha, int *comparacoes);
-void insere_arvore(NoIndice **raiz, char *palavra, int linha, int *comparacoes);
-NoIndice* busca_lista(NoIndice *inicio, char *palavra, int *comparacoes);
-NoIndice* busca_arvore(NoIndice *raiz, char *palavra, int *comparacoes);
-int altura_arvore(NoIndice *raiz); // Giovanni vai ter essa funccao, precisa pro relatorio
-
-// Global variables for text persistence
+// Variaveis globais para persistencia do texto
 char **todas_as_linhas = NULL;
 int total_linhas = 0;
 int capacidade_maxima = 1000;
 
-// Task 3: Sanitizer
+// Limpa a palavra
 void limpa_palavra(char *palavra) {
     char *src = palavra;
     char *dst = palavra;
@@ -32,6 +25,9 @@ void limpa_palavra(char *palavra) {
 }
 
 int main(int argc, char *argv[]) {
+    // Configura o console para UTF-8
+    system("chcp 65001 > nul");
+
     // 1. Verifica argumentos
     if (argc < 3) { 
         printf("Uso: %s <arquivo> <tipo_indice>\n", argv[0]); 
@@ -44,7 +40,7 @@ int main(int argc, char *argv[]) {
 
     int comparacoes_construcao = 0;
     
-    // 2. Carrega o texto na memória (Task 2)
+    // 2. Carrega o texto na memória
     FILE *f = fopen(argv[1], "r");
     if (!f) {
         perror("Erro ao abrir arquivo");
@@ -57,7 +53,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    char buffer[10000]; // Buffer temporario para leitura
+    char buffer[10000]; // Armazenamento temporario para leitura
     
 
     while (fgets(buffer, sizeof(buffer), f)) {
@@ -78,11 +74,11 @@ int main(int argc, char *argv[]) {
         // Persistencia
         todas_as_linhas[total_linhas] = strdup(buffer);
         
-        // Task 4: Tokenization Loop
+        // Loop de tokenizacao
         char *copia = strdup(buffer);
         char *token;
         
-        // Delimiters: space, comma, dot, dash, exclamation, question
+        // Delimitadores: espaço, vírgula, ponto, traço, exclamação, interrogação
         token = strtok(copia, " ,.-!?\n\r:;\"'()[]{}/");
         while (token != NULL) {
             if (strlen(token) > 0) {
@@ -104,14 +100,20 @@ int main(int argc, char *argv[]) {
     printf("Arquivo: '%s'\n", argv[1]);
     printf("Tipo de indice: '%s'\n", argv[2]);
     printf("Numero de linhas no arquivo: %d\n", total_linhas);
-    printf("Total de palavras unicas indexadas: 0\n"); 
+    int total_palavras = 0;
+    if (modo_arvore) {
+        total_palavras = conta_nos_arvore(raiz);
+    } else {
+        total_palavras = conta_nos_lista(inicio);
+    }
+    printf("Total de palavras unicas indexadas: %d\n", total_palavras); 
 
     if (modo_arvore) {
-        printf("Altura da arvore: 0\n"); 
+        printf("Altura da arvore: %d\n", altura_arvore(raiz)); 
     }
     printf("Numero de comparacoes realizadas para a construcao do indice: %d\n", comparacoes_construcao);
 
-    // Task 5: Interface de Usuário (CLI) e Busca
+    // Interface de Usuário (CLI) e Busca
     char comando[100];
     char termo[100];
     
@@ -139,8 +141,7 @@ int main(int argc, char *argv[]) {
                 printf("Existem %d ocorrências da palavra '%s' na(s) seguinte(s) linha(s):\n", resultado->ocorrencias, termo);
                 NoLinha *atual = resultado->lista_linhas;
                 while(atual != NULL) {
-                    // Imprime a linha original usando o vetor persistente
-                    // Note: atual->linha is 1-based, array is 0-based
+                    // Imprime a linha original (linhas começam em 1, mas o array começa em 0)
                     if (atual->linha > 0 && atual->linha <= total_linhas) {
                         printf("%05d: %s\n", atual->linha, todas_as_linhas[atual->linha - 1]);
                     }
@@ -155,7 +156,7 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    // Cleanup (Optional but good practice)
+    // Limpeza e liberacao da memoria
     for (int i = 0; i < total_linhas; i++) {
         free(todas_as_linhas[i]);
     }

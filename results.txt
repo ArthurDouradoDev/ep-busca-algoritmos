@@ -1,0 +1,293 @@
+=== BASIC LISTA === 
+Arquivo: 'basic.txt'
+Tipo de indice: 'lista'
+Numero de linhas no arquivo: 13
+Total de palavras unicas indexadas: 0
+Numero de comparacoes realizadas para a construcao do indice: 3457
+> Existem 4 ocorrências da palavra 'algorithm' na(s) seguinte(s) linha(s):
+00001: Informally, an algorithm is any well-defined computational procedure that takes
+00003: as output. An algorithm is thus a sequence of computational steps that transform
+00006: We can also view an algorithm as a tool for solving a well-specified computational
+00008: input/output relationship. The algorithm describes a specific computational 
+Numero de comparacoes: 68
+> Existem 2 ocorrências da palavra 'value' na(s) seguinte(s) linha(s):
+00002: some value, or set of values, as input and produces some value, or set of values, 
+Numero de comparacoes: 58
+> Palavra 'mary' nao encontrada.
+Numero de comparacoes: 70
+> Palavra 'boat' nao encontrada.
+Numero de comparacoes: 70
+> Palavra 'frankenstein' nao encontrada.
+Numero de comparacoes: 70
+> Palavra 'ia' nao encontrada.
+Numero de comparacoes: 70
+> Palavra 'google' nao encontrada.
+Numero de comparacoes: 70
+>  
+=== BASIC ARVORE === 
+Arquivo: 'basic.txt'
+Tipo de indice: 'arvore'
+Numero de linhas no arquivo: 13
+Total de palavras unicas indexadas: 0
+Altura da arvore: 0
+Numero de comparacoes realizadas para a construcao do indice: 691
+> Existem 4 ocorrências da palavra 'algorithm' na(s) seguinte(s) linha(s):
+00001: Informally, an algorithm is any well-defined computational procedure that takes
+00003: as output. An algorithm is thus a sequence of computational steps that transform
+00006: We can also view an algorithm as a tool for solving a well-specified computational
+00008: input/output relationship. The algorithm describes a specific computational 
+Numero de comparacoes: 3
+> Existem 2 ocorrências da palavra 'value' na(s) seguinte(s) linha(s):
+00002: some value, or set of values, as input and produces some value, or set of values, 
+Numero de comparacoes: 6
+> Palavra 'mary' nao encontrada.
+Numero de comparacoes: 8
+> Palavra 'boat' nao encontrada.
+Numero de comparacoes: 7
+> Palavra 'frankenstein' nao encontrada.
+Numero de comparacoes: 8
+> Palavra 'ia' nao encontrada.
+Numero de comparacoes: 8
+> Palavra 'google' nao encontrada.
+Numero de comparacoes: 8
+>  
+=== MEDIUM LISTA === 
+Arquivo: 'medium.txt'
+Tipo de indice: 'lista'
+Numero de linhas no arquivo: 160
+Total de palavras unicas indexadas: 0
+Numero de comparacoes realizadas para a construcao do indice: 311779
+> Palavra 'algorithm' nao encontrada.
+Numero de comparacoes: 547
+> Palavra 'value' nao encontrada.
+Numero de comparacoes: 547
+> Palavra 'mary' nao encontrada.
+Numero de comparacoes: 547
+> Palavra 'boat' nao encontrada.
+Numero de comparacoes: 547
+> Existem 1 ocorrências da palavra 'frankenstein' na(s) seguinte(s) linha(s):
+00016: reconhecível, como um "Frankenstein". Em um caso memorável, a
+Numero de comparacoes: 475
+> Existem 19 ocorrências da palavra 'ia' na(s) seguinte(s) linha(s):
+00001: MANCHETE: Resumos de IA do Google estão arruinando o sustento
+00004: SUBTÍTULO: O Modo de IA está mutilando receitas ao fundir
+00012: capacidade de busca em "Modo IA" (AI Mode), passou a oferecer
+00014: eram tão inteligentes assim. A IA pegava elementos de receitas
+00017: IA do Google não conseguiu distinguir o site satírico The Onion
+00026: livros de culinária montados por IA disponíveis para download
+00027: no Etsy ou em sites construídos por IA que têm uma semelhança
+00044: confundam seu trabalho com o "lixo de IA" e parem de confiar em
+00080: Mas ela ainda está preocupada com o impacto potencial da IA.
+00083: principal resultado. Então ela mudou para o Modo IA. Lá, ela
+00086: receita gerada por IA era pouco mais que uma lista de
+00090: O Modo IA incluiu links para todas as 10 receitas, incluindo a
+00103: interpretação da IA do mecanismo de busca sobre as receitas do
+00117: algoritmo e agora com o Modo IA, que está tornando os sites
+00122: mais interação as pessoas tinham com a IA, menos queriam se
+00124: o conteúdo de IA como menos confiável do que o conteúdo feito
+00127: Mas, a menos que o público se rebele contra o Modo IA, há um
+00146: No entanto, robôs de IA também estão roubando de livros de
+00152: de "lixo de IA" na internet, Critchlow acredita que elas
+Numero de comparacoes: 544
+> Existem 6 ocorrências da palavra 'google' na(s) seguinte(s) linha(s):
+00001: MANCHETE: Resumos de IA do Google estão arruinando o sustento
+00011: Em março passado, quando o Google começou a lançar sua
+00017: IA do Google não conseguiu distinguir o site satírico The Onion
+00081: Quando ela fez recentemente uma busca no Google por
+00100: espectadores viram links para o site no Google tenha
+00116: espectadores. É o próprio Google, com suas mudanças no
+Numero de comparacoes: 542
+>  
+=== MEDIUM ARVORE === 
+Arquivo: 'medium.txt'
+Tipo de indice: 'arvore'
+Numero de linhas no arquivo: 160
+Total de palavras unicas indexadas: 0
+Altura da arvore: 0
+Numero de comparacoes realizadas para a construcao do indice: 9608
+> Palavra 'algorithm' nao encontrada.
+Numero de comparacoes: 11
+> Palavra 'value' nao encontrada.
+Numero de comparacoes: 11
+> Palavra 'mary' nao encontrada.
+Numero de comparacoes: 8
+> Palavra 'boat' nao encontrada.
+Numero de comparacoes: 13
+> Existem 1 ocorrências da palavra 'frankenstein' na(s) seguinte(s) linha(s):
+00016: reconhecível, como um "Frankenstein". Em um caso memorável, a
+Numero de comparacoes: 11
+> Existem 19 ocorrências da palavra 'ia' na(s) seguinte(s) linha(s):
+00001: MANCHETE: Resumos de IA do Google estão arruinando o sustento
+00004: SUBTÍTULO: O Modo de IA está mutilando receitas ao fundir
+00012: capacidade de busca em "Modo IA" (AI Mode), passou a oferecer
+00014: eram tão inteligentes assim. A IA pegava elementos de receitas
+00017: IA do Google não conseguiu distinguir o site satírico The Onion
+00026: livros de culinária montados por IA disponíveis para download
+00027: no Etsy ou em sites construídos por IA que têm uma semelhança
+00044: confundam seu trabalho com o "lixo de IA" e parem de confiar em
+00080: Mas ela ainda está preocupada com o impacto potencial da IA.
+00083: principal resultado. Então ela mudou para o Modo IA. Lá, ela
+00086: receita gerada por IA era pouco mais que uma lista de
+00090: O Modo IA incluiu links para todas as 10 receitas, incluindo a
+00103: interpretação da IA do mecanismo de busca sobre as receitas do
+00117: algoritmo e agora com o Modo IA, que está tornando os sites
+00122: mais interação as pessoas tinham com a IA, menos queriam se
+00124: o conteúdo de IA como menos confiável do que o conteúdo feito
+00127: Mas, a menos que o público se rebele contra o Modo IA, há um
+00146: No entanto, robôs de IA também estão roubando de livros de
+00152: de "lixo de IA" na internet, Critchlow acredita que elas
+Numero de comparacoes: 3
+> Existem 6 ocorrências da palavra 'google' na(s) seguinte(s) linha(s):
+00001: MANCHETE: Resumos de IA do Google estão arruinando o sustento
+00011: Em março passado, quando o Google começou a lançar sua
+00017: IA do Google não conseguiu distinguir o site satírico The Onion
+00081: Quando ela fez recentemente uma busca no Google por
+00100: espectadores viram links para o site no Google tenha
+00116: espectadores. É o próprio Google, com suas mudanças no
+Numero de comparacoes: 5
+>  
+=== LONG LISTA === 
+Arquivo: 'long.txt'
+Tipo de indice: 'lista'
+Numero de linhas no arquivo: 7735
+Total de palavras unicas indexadas: 0
+Numero de comparacoes realizadas para a construcao do indice: 326258238
+> Palavra 'algorithm' nao encontrada.
+Numero de comparacoes: 7414
+> Existem 3 ocorrências da palavra 'value' na(s) seguinte(s) linha(s):
+00713: a greater value on tried worth. There was a show of gratitude and
+02515: I should have willingly given it to her, so much do I esteem and value
+06967: value and lose him. I would reconcile him to life, but he repulses the idea.
+Numero de comparacoes: 5543
+> Existem 2 ocorrências da palavra 'mary' na(s) seguinte(s) linha(s):
+00013: Author: Mary Wollstonecraft Shelley
+00030: by Mary Wollstonecraft (Godwin) Shelley
+Numero de comparacoes: 7355
+> Existem 17 ocorrências da palavra 'boat' na(s) seguinte(s) linha(s):
+00106: boat, with his holiday mates, on an expedition of discovery up his
+02183: town, I was obliged to cross the lake in a boat to arrive at Plainpalais.
+02743: retired for the night, I took the boat and passed many hours upon the
+02745: sometimes, after rowing into the middle of the lake, I left the boat to
+04813: alone in a little boat, watching the clouds and listening to the
+04975: We had agreed to descend the Rhine in a boat from Strasburgh to
+04993: bottom of the boat, and as I gazed on the cloudless blue sky, I seemed to
+05449: precipitation. In a few moments I saw him in his boat, which shot
+05493: fishing-boat land close to me, and one of the men brought me a packet;
+05547: direct position, stretched myself at the bottom of the boat. Clouds hid the
+05548: moon, everything was obscure, and I heard only the sound of the boat as its
+05557: that if I again made the attempt the boat would be instantly filled with
+05598: As I was occupied in fixing the boat and arranging the sails, several
+05688: saw a boat, with a single man in it, at a short distance from the shore;
+05690: boat in which I had just landed.
+05694: before she heard of the discovery of the body, when she saw a boat with
+06858: purpose. I hoped to induce you to grant me a boat with which I could pursue
+Numero de comparacoes: 7101
+> Existem 29 ocorrências da palavra 'frankenstein' na(s) seguinte(s) linha(s):
+00001: The Project Gutenberg eBook of Frankenstein; Or, The Modern Prometheus
+00011: Title: Frankenstein; Or, The Modern Prometheus
+00024: *** START OF THE PROJECT GUTENBERG EBOOK FRANKENSTEIN; OR, THE MODERN PROMETHEUS ***
+00026: Frankenstein;
+01617: instantly sprung out. “My dear Frankenstein,” exclaimed he,
+01644: account myself. But, my dear Frankenstein,” continued he, stopping
+01937: “M. Frankenstein is modest; an excellent quality in a young man.
+02095: “Alphonse Frankenstein.
+02108: “My dear Frankenstein,” exclaimed Henry, when he perceived me
+02505: benevolent of human creatures. She nursed Madame Frankenstein, my aunt, in
+02679: Frankenstein, your son, your kinsman, your early, much-loved friend; he
+03048: the which thou owest me. Oh, Frankenstein, be not equitable to every
+03062: compassion? Believe me, Frankenstein, I was benevolent; my soul glowed
+03081: to me, Frankenstein. You accuse me of murder, and yet you would, with
+04546: “‘Frankenstein! you belong then to my enemy—to him towards whom I have
+04966: “now I enjoy existence! But you, my dear Frankenstein, wherefore are
+06903: endeavoured to gain from Frankenstein the particulars of his
+06911: Frankenstein discovered that I made notes concerning his history; he asked
+07036: desolation. Frankenstein has daily declined in health; a feverish fire
+07059: Frankenstein, who had at first been silent, and indeed appeared hardly
+07128: loud and long-continued. Frankenstein, who was dozing, awoke and asked the
+07206: where the remains of Frankenstein still lie. I must arise and examine.
+07233: close! Oh, Frankenstein! Generous and self-devoted being! What does it
+07250: Frankenstein would yet have lived.”
+07264: and overcome. I pitied Frankenstein; my pity amounted to horror; I
+07282: to mind what Frankenstein had said of his powers of eloquence and
+07315: “You, who call Frankenstein your friend, seem to have a knowledge of my
+07362: eyes will ever behold. Farewell, Frankenstein! If thou wert yet alive
+07387: *** END OF THE PROJECT GUTENBERG EBOOK FRANKENSTEIN; OR, THE MODERN PROMETHEUS ***
+Numero de comparacoes: 7409
+> Palavra 'ia' nao encontrada.
+Numero de comparacoes: 7414
+> Palavra 'google' nao encontrada.
+Numero de comparacoes: 7414
+>  
+=== LONG ARVORE === 
+Arquivo: 'long.txt'
+Tipo de indice: 'arvore'
+Numero de linhas no arquivo: 7735
+Total de palavras unicas indexadas: 0
+Altura da arvore: 0
+Numero de comparacoes realizadas para a construcao do indice: 885075
+> Palavra 'algorithm' nao encontrada.
+Numero de comparacoes: 17
+> Existem 3 ocorrências da palavra 'value' na(s) seguinte(s) linha(s):
+00713: a greater value on tried worth. There was a show of gratitude and
+02515: I should have willingly given it to her, so much do I esteem and value
+06967: value and lose him. I would reconcile him to life, but he repulses the idea.
+Numero de comparacoes: 13
+> Existem 2 ocorrências da palavra 'mary' na(s) seguinte(s) linha(s):
+00013: Author: Mary Wollstonecraft Shelley
+00030: by Mary Wollstonecraft (Godwin) Shelley
+Numero de comparacoes: 11
+> Existem 17 ocorrências da palavra 'boat' na(s) seguinte(s) linha(s):
+00106: boat, with his holiday mates, on an expedition of discovery up his
+02183: town, I was obliged to cross the lake in a boat to arrive at Plainpalais.
+02743: retired for the night, I took the boat and passed many hours upon the
+02745: sometimes, after rowing into the middle of the lake, I left the boat to
+04813: alone in a little boat, watching the clouds and listening to the
+04975: We had agreed to descend the Rhine in a boat from Strasburgh to
+04993: bottom of the boat, and as I gazed on the cloudless blue sky, I seemed to
+05449: precipitation. In a few moments I saw him in his boat, which shot
+05493: fishing-boat land close to me, and one of the men brought me a packet;
+05547: direct position, stretched myself at the bottom of the boat. Clouds hid the
+05548: moon, everything was obscure, and I heard only the sound of the boat as its
+05557: that if I again made the attempt the boat would be instantly filled with
+05598: As I was occupied in fixing the boat and arranging the sails, several
+05688: saw a boat, with a single man in it, at a short distance from the shore;
+05690: boat in which I had just landed.
+05694: before she heard of the discovery of the body, when she saw a boat with
+06858: purpose. I hoped to induce you to grant me a boat with which I could pursue
+Numero de comparacoes: 15
+> Existem 29 ocorrências da palavra 'frankenstein' na(s) seguinte(s) linha(s):
+00001: The Project Gutenberg eBook of Frankenstein; Or, The Modern Prometheus
+00011: Title: Frankenstein; Or, The Modern Prometheus
+00024: *** START OF THE PROJECT GUTENBERG EBOOK FRANKENSTEIN; OR, THE MODERN PROMETHEUS ***
+00026: Frankenstein;
+01617: instantly sprung out. “My dear Frankenstein,” exclaimed he,
+01644: account myself. But, my dear Frankenstein,” continued he, stopping
+01937: “M. Frankenstein is modest; an excellent quality in a young man.
+02095: “Alphonse Frankenstein.
+02108: “My dear Frankenstein,” exclaimed Henry, when he perceived me
+02505: benevolent of human creatures. She nursed Madame Frankenstein, my aunt, in
+02679: Frankenstein, your son, your kinsman, your early, much-loved friend; he
+03048: the which thou owest me. Oh, Frankenstein, be not equitable to every
+03062: compassion? Believe me, Frankenstein, I was benevolent; my soul glowed
+03081: to me, Frankenstein. You accuse me of murder, and yet you would, with
+04546: “‘Frankenstein! you belong then to my enemy—to him towards whom I have
+04966: “now I enjoy existence! But you, my dear Frankenstein, wherefore are
+06903: endeavoured to gain from Frankenstein the particulars of his
+06911: Frankenstein discovered that I made notes concerning his history; he asked
+07036: desolation. Frankenstein has daily declined in health; a feverish fire
+07059: Frankenstein, who had at first been silent, and indeed appeared hardly
+07128: loud and long-continued. Frankenstein, who was dozing, awoke and asked the
+07206: where the remains of Frankenstein still lie. I must arise and examine.
+07233: close! Oh, Frankenstein! Generous and self-devoted being! What does it
+07250: Frankenstein would yet have lived.”
+07264: and overcome. I pitied Frankenstein; my pity amounted to horror; I
+07282: to mind what Frankenstein had said of his powers of eloquence and
+07315: “You, who call Frankenstein your friend, seem to have a knowledge of my
+07362: eyes will ever behold. Farewell, Frankenstein! If thou wert yet alive
+07387: *** END OF THE PROJECT GUTENBERG EBOOK FRANKENSTEIN; OR, THE MODERN PROMETHEUS ***
+Numero de comparacoes: 5
+> Palavra 'ia' nao encontrada.
+Numero de comparacoes: 13
+> Palavra 'google' nao encontrada.
+Numero de comparacoes: 17
+>  

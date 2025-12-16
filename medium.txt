@@ -1,0 +1,160 @@
+MANCHETE: Resumos de IA do Google estão arruinando o sustento
+de escritores de receitas: 'É um evento de extinção'
+
+SUBTÍTULO: O Modo de IA está mutilando receitas ao fundir
+instruções de múltiplos criadores – e causando enormes quedas
+no tráfego de anúncios.
+
+AUTORA: Aimee Levitt
+DATA: Segunda-feira, 15 de dezembro de 2025
+
+Em março passado, quando o Google começou a lançar sua
+capacidade de busca em "Modo IA" (AI Mode), passou a oferecer
+receitas geradas por inteligência artificial. As receitas não
+eram tão inteligentes assim. A IA pegava elementos de receitas
+semelhantes de vários criadores e as transformava em algo mal
+reconhecível, como um "Frankenstein". Em um caso memorável, a
+IA do Google não conseguiu distinguir o site satírico The Onion
+de sites de receitas legítimos e aconselhou os usuários a
+cozinhar com cola não tóxica.
+
+Nos últimos anos, blogueiros que não protegeram seus sites por
+trás de um paywall (acesso pago) viram suas receitas,
+cuidadosamente desenvolvidas e testadas, aparecerem — muitas
+vezes sem atribuição e de forma distorcida — em respostas do
+ChatGPT. Eles viram versões simplificadas de suas receitas em
+livros de culinária montados por IA disponíveis para download
+no Etsy ou em sites construídos por IA que têm uma semelhança
+superficial com blogs escritos por humanos. Suas fotos e
+vídeos, enquanto isso, são reaproveitados em postagens no
+Facebook e pins no Pinterest que levam de volta a esse "lixo
+digital".
+
+Os escritores de receitas não têm recurso legal porque as
+receitas geralmente não são protegidas por direitos autorais.
+Embora o direito autoral proteja trabalhos publicados ou
+gravados, ele não cobre conjuntos de instruções (embora possa
+se aplicar à redação específica dessas instruções).
+
+Sem essa propriedade intelectual essencial, muitos blogueiros
+de culinária ganham a vida oferecendo seu trabalho gratuitamente
+enquanto usam anúncios para ganhar dinheiro. Mas agora eles
+temem que usuários casuais, que dependem de mecanismos de busca
+ou mídias sociais para encontrar uma receita para o jantar,
+confundam seu trabalho com o "lixo de IA" e parem de confiar em
+sites de receitas online.
+
+"Há muitas pessoas com medo até de falar sobre o que está
+acontecendo porque é o sustento delas", diz Jim Delmage, que,
+com sua esposa Tara, administra o blog e canal no YouTube Sip
+and Feast.
+
+Matt Rodbard, fundador e editor-chefe do site Taste, é ainda
+mais pessimista. O Taste costumava publicar receitas com mais
+frequência, mas agora foca principalmente em jornalismo e em um
+podcast. "Para sites que dependem do modelo de publicidade",
+diz ele, "acho que isso é um evento de extinção em muitos
+aspectos."
+
+A temporada de festas é tradicionalmente quando os blogueiros
+de comida ganham a maior parte de sua receita publicitária.
+Para muitos, este ano tem sido mais lento que o normal. Uma
+blogueira, Carrie Forrest, do Clean Eating Kitchen, disse à
+Bloomberg que nos últimos dois anos perdeu 80% de seu tráfego.
+
+Outros, como Delmage e Karen Tedesco, autora do blog
+Familystyle Food, dizem que seus números e receita de anúncios
+permaneceram estáveis — por enquanto. Eles atribuem isso ao
+foco de suas energias menos em tentar burlar os mecanismos de
+busca e mais no objetivo de longo prazo de atrair seguidores
+regulares.
+
+A estratégia de Tedesco tem sido criar receitas que dependem
+de sua experiência e conhecimento técnico, aprimorados por
+anos em cozinhas de restaurantes e como chef pessoal. Sua
+receita de almôndegas italianas, por exemplo, baseada na de sua
+mãe, inclui conselhos sobre qual carne usar, uma explicação de
+por que farinha de rosca embebida em leite é essencial para a
+textura, além de uma dúzia de fotos do processo e um vídeo.
+
+Mas ela ainda está preocupada com o impacto potencial da IA.
+Quando ela fez recentemente uma busca no Google por
+"almôndegas italianas", o Familystyle Food apareceu como o
+principal resultado. Então ela mudou para o Modo IA. Lá, ela
+descobriu que a receita havia sido "sintetizada" (como o
+Gemini colocou) em uma nova receita com nove outras fontes. A
+receita gerada por IA era pouco mais que uma lista de
+ingredientes e seis passos básicos, sem nenhum dos detalhes
+que tornam a receita de Tedesco única.
+
+O Modo IA incluiu links para todas as 10 receitas, incluindo a
+de Tedesco, mas, diz ela, "eu não acho que muitas pessoas
+estejam realmente clicando nos links das fontes. Neste ponto,
+elas estão confiando absolutamente nos resultados que são
+jogados na cara delas."
+
+Outros blogueiros viram um impacto mais definitivo em sua
+audiência. Adam Gallagher, que administra o Inspired Taste com
+sua esposa Joanne, disse ao podcast Marketing O'Clock que,
+desde a primavera, notou que, embora o número de vezes que os
+espectadores viram links para o site no Google tenha
+aumentado, o número de visitantes reais do site diminuiu. Isso
+indica, para ele, que os usuários estão satisfeitos com a
+interpretação da IA do mecanismo de busca sobre as receitas do
+Inspired Taste.
+
+Rodbard reconhece que muitos blogs de comida ficaram feios e
+sobrecarregados com anúncios, o que exacerbou o problema. "A
+tecnologia de anúncios nesses blogs de receitas ficou tão
+ruim, tantas janelas pop-up e tantos travamentos, que nós meio
+que perdemos como editores", diz ele.
+
+De acordo com Tom Critchlow, vice-presidente executivo de
+crescimento de audiência da Raptive, uma empresa de mídia que
+trabalha com muitos blogueiros de comida para encontrar
+anunciantes, não são os anúncios que estão afastando os
+espectadores. É o próprio Google, com suas mudanças no
+algoritmo e agora com o Modo IA, que está tornando os sites
+mais difíceis de encontrar.
+
+Há alguma esperança, no entanto: uma pesquisa com 3.000
+adultos dos EUA encomendada pela Raptive mostrou que quanto
+mais interação as pessoas tinham com a IA, menos queriam se
+envolver com ela, e quase metade dos entrevistados classificou
+o conteúdo de IA como menos confiável do que o conteúdo feito
+por um humano.
+
+Mas, a menos que o público se rebele contra o Modo IA, há um
+limite para o que os blogueiros podem fazer. Eles podem
+bloquear o rastreador de treinamento da OpenAI, mas não estão
+necessariamente dispostos a se tornarem invisíveis para as
+buscas na web; como diz Delmage: "Você não pode morder a mão
+que te alimenta."
+
+Há também a opção de mudar para um modelo de assinatura, como
+Substack ou Patreon, e manter as receitas protegidas por
+pagamento, mas tanto Tedesco quanto Delmage apontam que os
+usuários do Substack de maior sucesso já chegaram à plataforma
+com seguidores muito mais substanciais.
+
+Rodbard sugere que a versão analógica do blog de receitas, o
+livro de culinária, pode estar pronta para um retorno, já que
+oferece uma fonte confiável e testada. Segundo a empresa de
+pesquisa de mercado Circana, as vendas de livros de culinária
+de panificação aumentaram 80% este ano.
+
+No entanto, robôs de IA também estão roubando de livros de
+culinária publicados, através de conjuntos de dados como o
+Library Genesis (LibGen), usados para treinar modelos da Meta
+e outros.
+
+À medida que mais pessoas se tornam conscientes da quantidade
+de "lixo de IA" na internet, Critchlow acredita que elas
+desenvolverão uma maior apreciação pelo conteúdo produzido
+por humanos.
+
+Os criadores de receitas não têm tanta certeza. "Estou
+colocando minha fé de que sempre haverá um segmento de pessoas
+que realmente querem aprender algo", diz Tedesco. Mas quanto
+ao negócio de blogar em si, "é como uma maré. Está sempre
+subindo e descendo e você tem que rolar com ela e se adaptar."

@@ -79,4 +79,12 @@ NoIndice* busca_lista(NoIndice *inicio, char *palavra, int *comparacoes) {
     }
     
     return NULL;
+}int conta_nos_lista(NoIndice *inicio) {
+    int contador = 0;
+    NoIndice *atual = inicio;
+    while (atual != NULL) {
+        contador++;
+        atual = atual->prox;
+    }
+    return contador;
 }
