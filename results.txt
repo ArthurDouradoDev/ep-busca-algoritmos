@@ -2,7 +2,7 @@
 Arquivo: 'basic.txt'
 Tipo de indice: 'lista'
 Numero de linhas no arquivo: 13
-Total de palavras unicas indexadas: 0
+Total de palavras unicas indexadas: 70
 Numero de comparacoes realizadas para a construcao do indice: 3457
 > Existem 4 ocorrências da palavra 'algorithm' na(s) seguinte(s) linha(s):
 00001: Informally, an algorithm is any well-defined computational procedure that takes
@@ -28,8 +28,8 @@ Numero de comparacoes: 70
 Arquivo: 'basic.txt'
 Tipo de indice: 'arvore'
 Numero de linhas no arquivo: 13
-Total de palavras unicas indexadas: 0
-Altura da arvore: 0
+Total de palavras unicas indexadas: 70
+Altura da arvore: 11
 Numero de comparacoes realizadas para a construcao do indice: 691
 > Existem 4 ocorrências da palavra 'algorithm' na(s) seguinte(s) linha(s):
 00001: Informally, an algorithm is any well-defined computational procedure that takes
@@ -55,7 +55,7 @@ Numero de comparacoes: 8
 Arquivo: 'medium.txt'
 Tipo de indice: 'lista'
 Numero de linhas no arquivo: 160
-Total de palavras unicas indexadas: 0
+Total de palavras unicas indexadas: 547
 Numero de comparacoes realizadas para a construcao do indice: 311779
 > Palavra 'algorithm' nao encontrada.
 Numero de comparacoes: 547
@@ -102,8 +102,8 @@ Numero de comparacoes: 542
 Arquivo: 'medium.txt'
 Tipo de indice: 'arvore'
 Numero de linhas no arquivo: 160
-Total de palavras unicas indexadas: 0
-Altura da arvore: 0
+Total de palavras unicas indexadas: 547
+Altura da arvore: 17
 Numero de comparacoes realizadas para a construcao do indice: 9608
 > Palavra 'algorithm' nao encontrada.
 Numero de comparacoes: 11
@@ -150,7 +150,7 @@ Numero de comparacoes: 5
 Arquivo: 'long.txt'
 Tipo de indice: 'lista'
 Numero de linhas no arquivo: 7735
-Total de palavras unicas indexadas: 0
+Total de palavras unicas indexadas: 7414
 Numero de comparacoes realizadas para a construcao do indice: 326258238
 > Palavra 'algorithm' nao encontrada.
 Numero de comparacoes: 7414
@@ -222,8 +222,8 @@ Numero de comparacoes: 7414
 Arquivo: 'long.txt'
 Tipo de indice: 'arvore'
 Numero de linhas no arquivo: 7735
-Total de palavras unicas indexadas: 0
-Altura da arvore: 0
+Total de palavras unicas indexadas: 7414
+Altura da arvore: 31
 Numero de comparacoes realizadas para a construcao do indice: 885075
 > Palavra 'algorithm' nao encontrada.
 Numero de comparacoes: 17
